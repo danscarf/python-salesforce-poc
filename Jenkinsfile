@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label 'build-docker'
+      label 'docker'
     }
 
   }
@@ -14,7 +14,7 @@ pipeline {
 
       }
       steps {
-        sh 'docker ps -a'
+        sh 'hostname'
       }
     }
   }
