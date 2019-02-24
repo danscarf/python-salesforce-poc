@@ -14,7 +14,7 @@ pipeline {
 
       }
       steps {
-        sh 'docker ps -a'
+        sh 'python -v'
       }
     }
   }
