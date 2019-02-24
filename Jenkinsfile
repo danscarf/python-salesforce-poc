@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    docker {
-      image 'php:7'
+    node {
+      label 'docker'
     }
 
   }
@@ -17,8 +17,5 @@ pipeline {
         echo 'Starting the build...'
       }
     }
-  }
-  environment {
-    node = 'docker'
   }
 }
