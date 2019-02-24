@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('stage1') {
       steps {
-        sh 'env'
+        sh '''env
+docker'''
       }
     }
   }
