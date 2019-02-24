@@ -9,7 +9,7 @@ pipeline {
     stage('Docker Info') {
       agent {
         docker {
-          image 'php:7'
+          image 'python:latest'
         }
 
       }
