@@ -1,4 +1,3 @@
-
 pipeline {
   agent {
     node {
@@ -7,9 +6,15 @@ pipeline {
 
   }
   stages {
-    stage('stage1') {
+    stage('') {
+      agent {
+        node {
+          label 'docker'
+        }
+
+      }
       steps {
-        sh 'env'
+        sh 'docker ps -a'
       }
     }
   }
