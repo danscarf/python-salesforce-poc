@@ -6,15 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('Run in container (e.g. the php-7)') {
-      agent {
-        docker {
-          image 'php:7'
-        }
-
-      }
+    stage('stage1') {
       steps {
-        echo 'Starting the build...'
+        sh 'env'
       }
     }
   }
