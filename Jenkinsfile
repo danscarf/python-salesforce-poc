@@ -1,12 +1,12 @@
 pipeline {
   agent {
     node {
-      label 'docker'
+      label 'build-docker'
     }
 
   }
   stages {
-    stage('') {
+    stage('error') {
       agent {
         node {
           label 'docker'
