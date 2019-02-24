@@ -6,7 +6,7 @@ pipeline {
 
   }
   stages {
-    stage('error') {
+    stage('Docker Info') {
       agent {
         node {
           label 'docker'
@@ -14,7 +14,7 @@ pipeline {
 
       }
       steps {
-        sh 'hostname'
+        sh 'docker ps -a'
       }
     }
   }
