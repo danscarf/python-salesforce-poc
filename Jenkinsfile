@@ -8,8 +8,8 @@ pipeline {
   stages {
     stage('Docker Info') {
       agent {
-        node {
-          label 'docker'
+        docker {
+          image 'php:7'
         }
 
       }
